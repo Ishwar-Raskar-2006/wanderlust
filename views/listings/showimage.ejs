@@ -1,0 +1,15 @@
+<% layout('./layouts/boilerplate') -%>
+
+<style>
+      .image{
+            object-fit: cover;
+      }
+</style>
+
+<div class="row row-col-md-6">
+<%for(let img of images){%>
+<div class=" col-6 image d-flex mt-3 mb-3">
+      <img src="<%=img.url %>" class="img-fluid w-100 rounded" style="object-fit: cover;" alt="Main Image">
+</div>
+<%}%>
+</div>
